@@ -1,0 +1,86 @@
+/* Стили для страницы */
+body {
+    font-family: Arial, sans-serif; /* Основной шрифт */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0;
+    background-color: #f0f0f0; /* Цвет фона */
+}
+
+/* Контейнер формы */
+header {
+    max-width: 400px; /* Ширина блока */
+    margin: 50px auto; /* Центрирование блока */
+    background: #ffffff; /* Белый фон */
+    padding: 20px; /* Внутренний отступ */
+    border-radius: 8px; /* Скруглённые углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень блока */
+    
+}
+
+/* Заголовок */
+h1 {
+    text-align: center; /* Центрирование текста */
+    color: #333; /* Цвет заголовка */
+}
+
+/* Метки к полям */
+label {
+    display: block; /* Каждое поле на новой строке */
+    margin: 15px 0 5px; /* Отступы сверху и снизу */
+    color: #555; /* Цвет текста метки */
+}
+
+/* Поля ввода */
+input {
+    width: 100%; /* Ширина на 100% контейнера */
+    padding: 10px; /* Внутренний отступ */
+    margin-bottom: 10px; /* Отступ снизу */
+    border: 1px solid #ccc; /* Рамка поля */
+    border-radius: 4px; /* Скругление углов */
+    font-size: 16px; /* Размер текста */
+    box-sizing: border-box;
+}
+
+/* Кнопка отправки */
+button {
+    padding: 10px 20px; /* Внутренний отступ (по вертикали 10px, по горизонтали 20px) */
+    background-color: #4CAF50; /* Зелёный фон */
+    color: white; /* Белый текст */
+    border: none; /* Убираем рамку */
+    border-radius: 4px; /* Скруглённые углы */
+    font-size: 16px; /* Размер текста */
+    cursor: pointer; /* Указатель при наведении */
+    box-sizing: border-box; /* Включаем padding и border в ширину */
+    margin-top: 10px; /* Отступ сверху */
+    display: inline-block; /* Убираем блоковое отображение */
+    width: auto; /* Убираем ширину на 100% */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Размещение кнопок вертикально */
+    align-items: center; /* Центрирование кнопок */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+button:hover {
+    background-color: #45a049; /* Более тёмный зелёный */
+}
+/* Стиль кнопки "Назад" */
+#back-button {
+    background-color: #f44336; /* Красный фон для кнопки возврата */
+}
+
+#back-button:hover {
+    background-color: #e53935; /* Более тёмный красный при наведении */
+}
+
+/* Стиль кнопки "Войти" */
+#login-button {
+    background-color: #2196F3; /* Синий фон для кнопки Войти */
+}
+
+#login-button:hover {
+    background-color: #1976D2; /* Более тёмный синий при наведении */
+}

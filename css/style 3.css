@@ -1,0 +1,89 @@
+/* Стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Контейнер формы */
+header {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+h1 {
+    color: #333;
+}
+
+/* Метки к полям */
+label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #555;
+}
+
+/* Поля ввода */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Кнопки */
+button {
+    padding: 10px 20px; /* Внутренний отступ (по вертикали 10px, по горизонтали 20px) */
+    background-color: #4CAF50; /* Зелёный фон */
+    color: white; /* Белый текст */
+    border: none; /* Убираем рамку */
+    border-radius: 4px; /* Скруглённые углы */
+    font-size: 16px; /* Размер текста */
+    cursor: pointer; /* Указатель при наведении */
+    box-sizing: border-box; /* Включаем padding и border в ширину */
+    margin-top: 10px; /* Отступ сверху */
+    display: inline-block; /* Убираем блоковое отображение */
+    width: auto; /* Убираем ширину на 100% */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+/* Эффект при наведении */
+button:hover {
+    background-color: #45a049; /* Более тёмный зелёный */
+}
+
+/* Контейнер кнопок для выравнивания по центру */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Размещение кнопок вертикально */
+    align-items: center; /* Центрирование кнопок */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+/* Стиль кнопки "Назад" */
+#back-button {
+    background-color: #f44336; /* Красный фон для кнопки возврата */
+    margin-top: 10px; /* Отступ сверху для кнопки "Назад" */
+}
+
+#back-button:hover {
+    background-color: #e53935; /* Более тёмный красный при наведении */
+}
+
+/* Стиль кнопки "Регистрация" */
+#register-button {
+    background-color: #2196F3; /* Синий фон для кнопки Регистрация */
+    margin-top: 10px; /* Отступ сверху для кнопки "Регистрация" */
+}
+
+#register-button:hover {
+    background-color: #1976D2; /* Более тёмный синий при наведении */
+}
