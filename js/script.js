@@ -28,6 +28,6 @@ document.getElementById('registration-form').addEventListener('submit', function
         errorMessage.textContent = ''; // Очищаем сообщение об ошибке
         alert('Регистрация успешна!');
         // Добавьте сюда логику отправки данных на сервер, если нужно
-        window.location.href = 'login.html'; // Перенаправление на страницу входа
+        window.location.href = 'login.php'; // Перенаправление на страницу входа
     }
 });
