@@ -210,3 +210,84 @@ footer a:hover {
         bottom: 60px;
     }
 }
+/* Боковая навигация */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #4CAF50;
+    padding: 20px 0;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.side-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side-menu li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.side-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.side-menu a:hover {
+    background-color: #45a049;
+}
+
+/* Основная часть с учетом боковой панели */
+main {
+    margin-left: 220px; /* Учитываем ширину боковой панели */
+    padding: 20px;
+}
+
+/* Рекомендации */
+.recommendations {
+    margin-top: 30px;
+}
+
+.recommendations h3 {
+    color: #4CAF50;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.recommendations .product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations img {
+    width: 1000px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.recommendations h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.recommendations p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: #666;
+}
