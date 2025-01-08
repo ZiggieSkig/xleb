@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Главная страница</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 400px;
+            background-color: #000;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            height: 100%;
+        }
+
+        .carousel-item {
+            flex: 0 0 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+            padding: 20px;
+            background-color: #111;
+        }
+
+        .carousel-item img {
+            height: 100%;
+            max-width: 40%;
+            object-fit: cover;
+        }
+
+        .carousel-item .text-box {
+            max-width: 50%;
+            padding: 20px;
+        }
+
+        .carousel-item .text-box h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #FFEB3B; /* Yellow */
+        }
+
+        .carousel-item .text-box ul {
+            margin: 10px 0;
+            padding: 0;
+            list-style: none;
+            color: #fff;
+        }
+
+        .carousel-item .text-box ul li {
+            margin-bottom: 5px;
+        }
+
+        .carousel-item .text-box a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #8E24AA; /* Purple */
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .carousel-item .text-box a:hover {
+            background-color: #7b1fa2;
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .carousel-dots .dot {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .carousel-dots .dot.active {
+            background-color: #FFEB3B; /* Yellow active dot */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/sait.png" alt="Logo" width="45" height="45"></div>
+        <nav>
+            <ul>
+                <li><a href="index.php" class="nav-button">Главная</a></li>
+                <li><a href="catalog.html" class="nav-button">Каталог</a></li>
+                <li><a href="about.html" class="nav-button">О нас</a></li>
+                <li><a href="contact.html" class="nav-button">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <div class="text-box">
+                        <h2>RTX 4090 - Мощь нового поколения</h2>
+                        <ul>
+                            <li>Невероятная производительность</li>
+                            <li>Современные технологии для игр и работы</li>
+                            <li>Поддержка Ray Tracing и AI</li>
+                        </ul>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <img src="images/rtx4090.jpg" alt="RTX 4090">
+                </div>
+                <div class="carousel-item">
+                    <div class="text-box">
+                        <h2>Процессор Ryzen 9 9980X3D</h2>
+                        <ul>
+                            <li>Мощный многозадачный процессор</li>
+                            <li>Подходит для гейминга и профессиональной работы</li>
+                            <li>Технология 3D V-Cache</li>
+                        </ul>
+                        <a href="#">Смотреть</a>
+                    </div>
+                    <img src="images/ryzen9980.jpg" alt="Ryzen 9 9980X3D">
+                </div>
+                <div class="carousel-item">
+                    <div class="text-box">
+                        <h2>Акция на MSI RTX 3060</h2>
+                        <ul>
+                            <li>Скидки до 20%</li>
+                            <li>Отличное сочетание цены и качества</li>
+                            <li>Подходит для большинства современных игр</li>
+                        </ul>
+                        <a href="#">Узнать больше</a>
+                    </div>
+                    <img src="images/rtx3060msi.jpg" alt="MSI RTX 3060">
+                </div>
+                <div class="carousel-item">
+                    <div class="text-box">
+                        <h2>Современные аксессуары для ПК</h2>
+                        <ul>
+                            <li>Клавиатуры, мыши, мониторы</li>
+                            <li>Всё для комфортной работы и игр</li>
+                            <li>Гарантия и поддержка</li>
+                        </ul>
+                        <a href="#">Перейти к каталогу</a>
+                    </div>
+                    <img src="images/accessories.jpg" alt="Аксессуары для ПК">
+                </div>
+                <div class="carousel-item">
+                    <div class="text-box">
+                        <h2>Профессиональные серверы</h2>
+                        <ul>
+                            <li>Для бизнеса и крупных проектов</li>
+                            <li>Надежность и безопасность</li>
+                            <li>Кастомизация под нужды клиента</li>
+                        </ul>
+                        <a href="#">Заказать сервер</a>
+                    </div>
+                    <img src="images/servers.jpg" alt="Серверы">
+                </div>
+            </div>
+            <div class="carousel-dots"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Компьютерный магазин. Все права защищены. <a href="policy.html">Политика конфиденциальности</a>.</p>
+    </footer>
+
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const items = document.querySelectorAll('.carousel-item');
+        const dotsContainer = document.querySelector('.carousel-dots');
+
+        let currentIndex = 0;
+        let interval;
+        let isDragging = false;
+        let startPos = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+
+        // Create dots for carousel navigation
+        items.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => moveToIndex(index));
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = document.querySelectorAll('.dot');
+
+        function updateCarousel() {
+            carousel.style.transition = 'transform 0.5s ease-in-out';
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function moveToIndex(index) {
+            currentIndex = index;
+            updateCarousel();
+            resetInterval();
+        }
+
+        function nextSlide() {
+            if (currentIndex === items.length - 1) {
+                // If on last slide, jump to first without animation
+                carousel.style.transition = 'none';
+                currentIndex = 0;
+                updateCarousel();
+                setTimeout(() => {
+                    carousel.style.transition = 'transform 0.5s ease-in-out';
+                    updateCarousel();
+                }, 0);
+            } else {
+                currentIndex++;
+                updateCarousel();
+            }
+        }
+
+        function prevSlide() {
+            if (currentIndex === 0) {
+                // If on first slide, jump to last without animation
+                carousel.style.transition = 'none';
+                currentIndex = items.length - 1;
+                updateCarousel();
+                setTimeout(() => {
+                    carousel.style.transition = 'transform 0.5s ease-in-out';
+                    updateCarousel();
+                }, 0);
+            } else {
+                currentIndex--;
+                updateCarousel();
+            }
+        }
+
+        function resetInterval() {
+            clearInterval(interval);
+            interval = setInterval(nextSlide, 5000);
+        }
+
+        // Dragging functionality
+        carousel.addEventListener('mousedown', startDrag);
+        carousel.addEventListener('mousemove', dragging);
+        carousel.addEventListener('mouseup', endDrag);
+        carousel.addEventListener('touchstart', startDrag);
+        carousel.addEventListener('touchmove', dragging);
+        carousel.addEventListener('touchend', endDrag);
+
+        function startDrag(event) {
+            isDragging = true;
+            startPos = getPositionX(event);
+            carousel.style.transition = 'none';
+        }
+
+        function dragging(event) {
+            if (!isDragging) return;
+            const currentPosition = getPositionX(event);
+            currentTranslate = prevTranslate + currentPosition - startPos;
+            carousel.style.transform = `translateX(${currentTranslate}px)`;
+        }
+
+        function endDrag() {
+            isDragging = false;
+            const movedBy = currentTranslate - prevTranslate;
+
+            if (movedBy < -100) {
+                nextSlide();
+            } else if (movedBy > 100) {
+                prevSlide();
+            }
+
+            updateCarousel();
+            carousel.style.transition = 'transform 0.5s ease-in-out';
+            prevTranslate = -currentIndex * carousel.offsetWidth;
+            resetInterval();
+        }
+
+        function getPositionX(event) {
+            return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+        }
+
+        // Auto sliding functionality
+        interval = setInterval(nextSlide, 5000);
+    </script>
+</body>
+</html>
